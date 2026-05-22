@@ -17,9 +17,9 @@ function DisplayQuestion(){
     C=questions[pos][3];
     board.innerHTML="<h3>"+qus+"</h3>";
     //<button onclick='checkAnswer(\"A\")'>"+A+"</button><button onclick='checkAnswer(\"B\")'>"+B+"</button><button onclick='checkAnswer(\"C\")'>"+C+"</button>";
-    board.innerHTML+="<label><input type='radio' name='choices'  value='"+A+"'>"+A+"</label><br>";
-    board.innerHTML+="<label><input type='radio' name='choices'  value='"+B+"'>"+B+"</label><br>";
-    board.innerHTML+="<label><input type='radio' name='choices'  value='"+C+"'>"+C+"</label><br><br>";
+    board.innerHTML+="<label><input type='radio' name='choices'  value='"+A+"'>"+A+"</label>";
+    board.innerHTML+="<label><input type='radio' name='choices'  value='"+B+"'>"+B+"</label>";
+    board.innerHTML+="<label><input type='radio' name='choices'  value='"+C+"'>"+C+"</label>";
     board.innerHTML+="<button onclick='checkAnswer()'>Submit Answer</button>";
 }
 function checkAnswer(){

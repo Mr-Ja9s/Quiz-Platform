@@ -38,4 +38,4 @@ function checkAnswer(){
     pos++;
     DisplayQuestion();
     }
-        
+}       

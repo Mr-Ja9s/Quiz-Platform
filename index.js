@@ -24,5 +24,18 @@ function DisplayQuestion(){
 }
 function checkAnswer(){
     choices=document.getElementsByName("choices");
-    for(var i=0;i<choices.length;i++){
+    for(var i=0;i<choices.length;i++)
+    {
+
+        if(choice[i].checked)
+        {
+            choice=choice[i].value;
+        }
+    if(choice==question[pos][4])
+    {
+        core++;
+    }
     pos++;
+    DisplayQuestion();
+    }
+        
